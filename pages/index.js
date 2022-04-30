@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   const createKey = (key, width = "50px", num) => (
-    <a className={`${styles.keyboardKey} ${styles.card}`} style={{ width }} key={num}>
+    <a className={`${styles.keyboardKey} ${styles.card}`} style={{ width }} key={num} onClick={() => handleKeyPress(key)}>
       <h2>{key}</h2>
     </a>
   );
